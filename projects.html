@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <link rel="stylesheet" href="styles/projects-style.css">
+</head>
+<body class="dark-mode">
+    <div class="navbar">
+        <div class="logo" onclick="toggleDarkMode()"></div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="projects.html">Projects</a>
+            <a href="experiences.html">Experiences</a>
+            <a href="contact.html">Contact Me</a>
+        </div>
+    </div>
+    <div class="main-content">
+        <div class="text-content">
+            <div class="title-text">My Projects</div>
+            <div class="neon-rectangles">
+                <div class="neon-rectangle project1" style="grid-column: span 2;">
+                    <div class="project-name"><b>Meta Discord Bot</b></div>
+                    <div class="description">Meta was an Italian public Discord bot that aimed to improve servers with an optimized and lag-free bot, the project was interrupted due to Intents verification by Discord.</div>
+                </div>
+                <div class="neon-rectangle project2">
+                    <div class="project-name"><b>InsaneListeners</b></div>
+                    <div class="description">InsaneListeners is a Minecraft plugin aimed at better managing a Minecraft server, in fact this plugin offers a system to manage game events like the "Join Event" or the "Food Change" etc. You can download it <a href="https://www.spigotmc.org/resources/insanelisteners.116181/" target="_blank">here.</a>
+                    </div>
+                </div>
+                <div class="neon-rectangle project3">
+                    <div class="project-name"><b>NetherNexus Shop</b></div>
+                    <div class="description">
+                        NetherNexus is a shop created by me and a friend of mine with the aim of helping all Minecraft servers, we offer Discord Bot, Plugins, Builds, 3D Models, TexturePacks and Websites! Join Now! <a href="https://dsc.gg/nethernexus" target="_blank">Click here.</a></div>
+                </div>
+            </div>
+    </div>
+    <script>
+        function toggleDarkMode() {
+            document.body.classList.toggle('dark-mode');
+        }
+
+        window.addEventListener('load', () => {
+            document.querySelectorAll('.title-text, .neon-rectangle').forEach(el => {
+                el.style.opacity = 1;
+                el.style.transform = 'translateY(0)';
+            });
+        });
+    </script>
+</body>
+</html>

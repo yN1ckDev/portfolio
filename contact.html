@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles/contact-style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo" onclick="toggleDarkMode()"></div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="projects.html">Projects</a>
+            <a href="experiences.html"> Experiences</a>
+            <a href="#">Contact Me</a>
+        </div>
+    </nav>
+    <div class="main-content">
+        <div class="text-content">
+            <div class="title-text">How to Contact Me</div>
+            <div class="description-text">
+            You can contact me via Discord (I usually reply right away) my tag is n1ckcode. Or I'm also on Telegram which I look at less often but I will definitely reply within 2 days, my @ is @onEnable    
+            </div>
+        </div>
+        <div class="cube-container">
+            <div class="cube">
+                <div class="face front"></div>
+                <div class="face back"></div>
+                <div class="face left"></div>
+                <div class="face right"></div>
+                <div class="face top"></div>
+                <div class="face bottom"></div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function toggleDarkMode() {
+            document.body.classList.toggle('dark-mode');
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo" onclick="toggleDarkMode()"></div>
+        <div class="nav-links">
+            <a href="#">Home</a>
+            <a href="projects.html">Projects</a>
+            <a href="experiences.html"> Experiences</a>
+            <a href="contact.html">Contact Me</a>
+        </div>
+    </nav>
+    <div class="main-content">
+        <div class="text-content">
+            <div class="title-text">I'm N1ck</div>
+            <div class="description-text">
+                Hey! I'm N1ck, a 14 y.o developer based in Italy. my passion was born when I approached the world of Minecraft, I saw these super beautiful servers and I asked myself: "But how are they made?" So at the beginning of October 2023 I started getting closer to Java and discord bots, now I am a Plugin and Bot Developer for NetherNexus Shop, in the other pages you will find some of my projects and my contacts!
+            </div>
+        </div>
+        <div class="cube-container">
+            <div class="cube">
+                <div class="face front"></div>
+                <div class="face back"></div>
+                <div class="face left"></div>
+                <div class="face right"></div>
+                <div class="face top"></div>
+                <div class="face bottom"></div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function toggleDarkMode() {
+            document.body.classList.toggle('dark-mode');
+        }
+    </script>
+</body>
+</html>

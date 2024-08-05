@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.3s, color 0.3s;
+    position: relative;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f0f0f0;
+    padding: 1em 2em;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.logo {
+    width: 40px;
+    height: 40px;
+    background-color: #000;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.nav-links {
+    display: flex;
+    gap: 1em;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #000;
+}
+
+.main-content {
+    padding: 2em;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.title-text {
+    font-size: 3em;
+    color: #333;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 2em;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+@keyframes colorChange {
+    0% {
+        color: #87CEFA; 
+    }
+    100% {
+        color: #1E90FF; 
+    }
+}
+
+@keyframes colorChangeRed {
+    0% {
+        color: #FF6347; 
+    }
+    100% {
+        color: #FFA500;
+    }
+}
+
+@keyframes colorChangeRedWhite {
+    0% {
+        color: #e75137;
+    }
+    100% {
+        color: #a35151; 
+    }
+}
+
+.neon-rectangles {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto auto;
+    gap: 1em;
+    justify-items: center;
+    align-items: start;
+    margin-top: 2em;
+}
+
+.neon-rectangle {
+    width: 90%;
+    max-width: 500px;
+    height: 200px;
+    background: transparent;
+    border: 2px solid #000000;
+    box-shadow: 0 0 15px #000000;
+    position: relative;
+    text-align: center;
+    padding: 1em;
+    font-size: 1.5em;
+    color: #000000;
+    border-radius: 15px;
+    transition: color 0.3s, border-color 0.3s, box-shadow 0.3s, opacity 1s ease-out, transform 1s ease-out;
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+.neon-rectangle.project1 .project-name {
+    font-size: 1.5em; 
+    font-style: italic;
+    animation: colorChange 3s infinite alternate;
+    transition: color 0.3s;
+}
+
+.neon-rectangle.project2 .project-name {
+    font-size: 1.5em;
+    animation: colorChangeRed 3s infinite alternate;
+    transition: color 0.3s;
+}
+
+.neon-rectangle.project3 .project-name {
+    font-size: 1.5em;
+    animation: colorChangeRedWhite 3s infinite alternate;
+    transition: color 0.3s;
+}
+
+.neon-rectangle .description {
+    margin-top: 1em;
+    font-size: 1em;
+    color: #000000;
+}
+
+
+.dark-mode {
+    background-color: #121212;
+    color: #f0f0f0;
+}
+
+.dark-mode .navbar {
+    background-color: #333;
+    color: #f0f0f0;
+}
+
+.dark-mode .logo {
+    background-color: #fff;
+}
+
+.dark-mode .nav-links a {
+    color: #f0f0f0;
+}
+
+.dark-mode .nav-links a:hover {
+    color: #fff;
+}
+
+.dark-mode .title-text {
+    color: #ccc;
+}
+
+.dark-mode .neon-rectangle {
+    border-color: #ffffff;
+    box-shadow: 0 0 15px #ffffff;
+    color: #ffffff;
+}
+
+.dark-mode .neon-rectangle .project-name {
+    color: #fff;
+}
+
+.dark-mode .neon-rectangle .description {
+    color: #fff;
+}
+
